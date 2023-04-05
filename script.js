@@ -1,4 +1,4 @@
-class Water {
+class Beer {
     constructor(id, photo, name, price) {
         this.id = id;
         this.photo = photo;
@@ -6,29 +6,29 @@ class Water {
         this.price = price;
     }
 }
-let waters = [
-    new Water(1, "https://bianhapkhau.net/wp-content/uploads/2019/04/bia-staropramen-lon-500ml-nh%E1%BA%ADp-kh%E1%BA%A9u-ti%E1%BB%87p-600x600.jpg", "Bia Staropramen Thùng 5%  Lon 500ml  Thùng 24 Lon", 920000),
-    new Water(2, "https://bianhapkhau.net/wp-content/uploads/2019/05/bia-heineken-lon-cao-500ml.png","Bia Heineken Hà Lan 5%  Lon Cao 500ml  Thùng 24 Lon", 950000),
-    new Water(4, "https://bianhapkhau.net/wp-content/uploads/2019/04/bia-corona-chai-355ml-600x600.jpg", "Bia Corona Extra 4,5%  Chai 355ml  Thùng 24 Chai", 730000),
-    new Water(5, "https://bianhapkhau.net/wp-content/uploads/2019/04/bia-oettinger-%C4%91en-lon-500ml-600x602.jpg", "Bia Oettinger Đen 4,9%  Lon 500ml  Thùng 24 Lon", 960000),
-    new Water(6, "https://bianhapkhau.net/wp-content/uploads/2019/05/bia-pilger-lon-500ml-nh%E1%BA%ADp-kh%E1%BA%A9u-%C4%90%E1%BB%A9c.jpg", "Bia Paderborner Pilger Original 5%  Lon 500ml  Thùng 24 Lon", 850000),
-    new Water(7, "https://bianhapkhau.net/wp-content/uploads/2021/01/bia-peroni-nh%E1%BA%ADp-kh%E1%BA%A9u-%C3%BD-chai-330ml-600x600.jpg", "Bia Peroni 5,1%  Chai 330ml  Thùng 24 Chai", 1060000)
+let tool = [
+    new Beer(1, "https://bianhapkhau.net/wp-content/uploads/2019/04/bia-staropramen-lon-500ml-nh%E1%BA%ADp-kh%E1%BA%A9u-ti%E1%BB%87p-600x600.jpg", "Bia Staropramen Thùng 5%  Lon 500ml  Thùng 24 Lon", 920000),
+    new Beer(2, "https://bianhapkhau.net/wp-content/uploads/2019/05/bia-heineken-lon-cao-500ml.png","Bia Heineken Hà Lan 5%  Lon Cao 500ml  Thùng 24 Lon", 950000),
+    new Beer(4, "https://bianhapkhau.net/wp-content/uploads/2019/04/bia-corona-chai-355ml-600x600.jpg", "Bia Corona Extra 4,5%  Chai 355ml  Thùng 24 Chai", 730000),
+    new Beer(5, "https://bianhapkhau.net/wp-content/uploads/2019/04/bia-oettinger-%C4%91en-lon-500ml-600x602.jpg", "Bia Oettinger Đen 4,9%  Lon 500ml  Thùng 24 Lon", 960000),
+    new Beer(6, "https://bianhapkhau.net/wp-content/uploads/2019/05/bia-pilger-lon-500ml-nh%E1%BA%ADp-kh%E1%BA%A9u-%C4%90%E1%BB%A9c.jpg", "Bia Paderborner Pilger Original 5%  Lon 500ml  Thùng 24 Lon", 850000),
+    new Beer(7, "https://bianhapkhau.net/wp-content/uploads/2021/01/bia-peroni-nh%E1%BA%ADp-kh%E1%BA%A9u-%C3%BD-chai-330ml-600x600.jpg", "Bia Peroni 5,1%  Chai 330ml  Thùng 24 Chai", 1060000)
 ]
-waterss()
-function waterss() {
+chill()
+function chill() {
     let list = document.querySelector(".list");
     list.innerHTML = "";
-    for (let i=0 ; i<waters.length;i++) {
+    for (let i=0 ; i<tool.length;i++) {
         list.innerHTML += `
         <div class="item">
              <div class="img">
-                            <img src="${waters[i].photo}" alt="">
+                            <img src="${tool[i].photo}" alt="">
              </div>
             <div class="content">
-                <div class="title">${waters[i].name} </div>
-                <div class="price"> ${formatCurrency(waters[i].price)}</div>
-                <button class="remove" onclick= "remove(${waters[i].id})"><i class="fa-regular fa-trash-can"></i></button>
-                <button class="edit" onclick="editProduct(${waters[i].id})"> <i class="fa-regular fa-pen-to-square"></i></button>
+                <div class="title">${tool[i].name} </div>
+                <div class="price"> ${formatCurrency(tool[i].price)}</div>
+                <button class="remove" onclick= "remove(${tool[i].id})"><i class="fa-regular fa-trash-can"></i></button>
+                <button class="edit" onclick="editProduct(${tool[i].id})"> <i class="fa-regular fa-pen-to-square"></i></button>
              </div>
          </div>
         `
@@ -37,7 +37,7 @@ function waterss() {
 function formatCurrency(number){
     return number.toLocaleString('vi-VN', {style : 'currency', currency : 'VND'});
 }
-waterss()
+chill()
 function handleAddClick() {
     let errors = [];
     let photo = document.getElementById("img").value;
@@ -57,17 +57,17 @@ function handleAddClick() {
         else {
             id = getMaxId()+1;
         }
-        let p = new Water(id, photo, name, price);
-        waters.push(p)
-        waterss()
+        let p = new Beer(id, photo, name, price);
+        tool.push(p)
+        chill()
     }
 }
 function getMaxId() {
-    if (waters.length > 0) {
-        let maxProduct = waters[0];
-        for (let i = 1; i < waters.length; i++) {
-            if (waters[i].id > maxProduct.id) {
-                maxProduct = waters[i];
+    if (tool.length > 0) {
+        let maxProduct = tool[0];
+        for (let i = 1; i < tool.length; i++) {
+            if (tool[i].id > maxProduct.id) {
+                maxProduct = tool[i];
             }
         }
         return maxProduct.id;
@@ -78,11 +78,11 @@ function getMaxId() {
 function remove(id) {
     let confirm = window.confirm('Are you sure to remove this vendor?');
     if (confirm == true) {
-        waters = waters.filter(function (water) {
-            return water.id != id;
-            // nếu khác id sẽ ko bị xoá
+        tool = tool.filter(function (Beer) {
+            return Beer.id != id;
+           
         })
-        waterss();
+        chill();
     }
 }
 function editProduct(id){
@@ -100,9 +100,9 @@ function editProduct(id){
     }
 }
 function findProductById(id){
-    for(let i= 0;i<waters.length;i++){
-        if(waters[i].id == id){
-            return waters[i];
+    for(let i= 0;i<tool.length;i++){
+        if(tool[i].id == id){
+            return tool[i];
         }
     }
     return null;
@@ -112,11 +112,11 @@ function handleEditClick(){
     let img = document.getElementById("img").value;
     let title = document.getElementById("title").value
     let price = document.getElementById("price").value;
-    for(let i=0;i<waters.length;i++){
-        if(waters[i].id == idEdit){
-            waters[i].img = img;
-            waters[i].title = title;
-            waters[i].price = price;
+    for(let i=0;i<tool.length;i++){
+        if(tool[i].id == idEdit){
+            tool[i].img = img;
+            tool[i].title = title;
+            tool[i].price = price;
         }
     }
     document.getElementById("img").value = "";
@@ -125,7 +125,7 @@ function handleEditClick(){
     document.querySelector(".addProduct").style.display = 'block';
     document.querySelector(".editProduct").style.display = 'none';
     document.querySelector(".cancelProduct").style.display = 'none';
-    waterss();
+    chill();
 }
 
 

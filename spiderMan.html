@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav container">
+            <!-- logo -->
+            <div class="head-top">
+                <div>
+                    <a href="" class="logo">
+                        <img src="./img/avengers-logo_preview_rev_1.png" alt="">
+                    </a>
+                </div>
+                
+                 <div class="menu-movie">
+                     <ul>
+                         <li>
+                             <a href="">
+                                 Phim mới
+                             </a>
+                         </li>
+                         <li>
+                             <a href="#goto">
+                                 Phim lẻ
+                             </a>
+                         </li>
+                         <li>
+                             <a href="#movie-bo">
+                                 Phim bộ
+                             </a>
+                         </li>
+                         <li>
+                             <a href="">
+                                 thể loại
+                             </a>
+                         </li>
+                     </ul>
+                 </div>
+            <div class="seach-box">
+                <input type="search" name="" id="search-input" placeholder="tìm kiếm">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <a href="#" id="user">
+                <img src="./img/images.jpeg" alt="" class="user-img">
+            </a>
+
+            <div class="home">
+                <a href="home.html" class="home-link">
+                    <i class="fa fa-solid fa-house"></i>
+                    <span class="home-link-title">Home</span>
+                </a>
+                <a href="#home" class="home-link">
+                    <i class="fa-brands fa-hotjar"></i>
+                    <span class="home-link-title">trending</span>
+                </a>
+                <a href="#home" class="home-link">
+                    <i class="fa fa-compass"></i>
+                    <span class="home-link-title">Explore</span>
+                </a>
+                <a href="#home" class="home-link">
+                    <i class="fa fa-tv"></i>
+                    <span class="home-link-title">Movies</span>
+                </a>
+                <a href="#home" class="home-link">
+                    <i class="fa fa-heart"></i>
+                    <span class="home-link-title">Favourite</span>
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="play-container container">
+        <img src="./img/spriderman.jpeg" alt="" class="play-img">
+
+        <div class="play-text">
+            <h2> 
+                Người Nhện Không Nhà
+            </h2>
+            <div class="icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>4/5</span>
+            </div>
+            <div class="btn-play-movie">
+                <a href="#" class="watch-btn watch-movie" >
+                    xem phim
+                </a>
+    
+                <a href="#" class="watch-btn watch-trailer">
+                    <!-- <i class="fa-solid fa-play"></i> -->
+                    <span>trailer</span>
+                </a>
+            </div>
+            
+        </div>
+        <i class="fa-regular fa-circle-play"></i>
+
+        <div class="video-container">
+
+            <div class="video-box">
+                <video id="video" src="./play-page/spiderman/spiderman.mp4" controls></video>
+
+                <i class="fa-solid fa-x close-video"></i>
+            </div>
+        </div>
+
+        <div class="video-trailer ">
+            <div class="trailer-box">
+                <video id="trailer" src="./play-page/spiderman/trailer-spiderman.mp4" controls ></video>> </video>
+                <i class="fa-solid fa-xmark"></i>           
+             </div>
+        </div>
+       
+        
+    </div>
+   
+    <!-- ---------------- -->
+    
+
+    <div class="info-movie container">
+       
+        <div class="table-movie"> 
+            <ul>
+                <li>
+                    <label for="">Đang phát</label>
+                    <span style="color: red;"> HD Vietsub</span>
+                </li>
+                
+        
+            </ul>
+            <ul>
+                <li >
+                    <label for="">Thể Loại :</label>
+                    <span> Phiêu Lưu - Hành Động, Khoa Học - Viễn Tưởng</span>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <label for="">Đạo diễn :</label>
+                    <span> Jon Watts</span>
+                </li>
+                
+            </ul>
+            <ul>
+                <li >
+                    <label for="">Thời Lượng :</label>
+                    <span>148 phút</span>
+                </li >
+            </ul>
+            <ul>
+                <li>
+                    <label for="">năm phát hành :</label>
+                    <span> 2022</span>
+                </li>
+               
+            </ul>
+            <ul>
+                <li >
+                    <label for="">Quốc  :</label>
+                    <span> Âu - Mỹ</span>
+                </li>
+            </ul>
+        </div>
+        <div class="content-movie">
+            <h3> Nội dung phim và Review</h3>
+            <p style="padding-top: 15px;">
+                Phim Người Nhện Không Còn Nhà (Phiên Bản Mới) - Spider-Man: No Way Home (More Fun Stuff Version): xoay quanh việc thân phận Người Nhện bị lộ diện, giờ đây hàng xóm và cả thế giới ai cũng biết gương mặt anh chàng siêu anh hùng này, điều này làm thay đổi cuộc sống hằng ngày của anh đồng thời làm ảnh hưởng gây nguy hiểm đến người thân, người yêu của Spider-Man. Trước tình thế khó lường Người Nhện đã tìm đến Doctor Strange nhờ giúp đỡ khội phục lại bí mật, thế nhưng phép thuật thi triển đã làm gây ra 1 lỗ hỏng thời gian làm giải phóng những kẻ ác mạnh mẻ nhất trước đây từng đối đầu với Người Nhện, cùng 1 lúc xuất hiện quá nhiều kẻ thù liệu Spider-Man làm sao đối phó nổi đây? Mời các bạn cùng đón xem Người Nhện Không Còn Nhà (Phiên Bản Mới) - Spider-Man: No Way Home (More Fun Stuff Version).
+            </p>
+        </div>
+    </div>
+
+    <!-- diễn viên -->
+    <div class="info-movie container">
+        <div class="cast-heading">Diễn Viên</div>
+        <div class="cast">
+            <div class="cast-box">
+                <img src="./play-page/spiderman/tom.jpeg" alt="" class="cars-img">
+                <span class="cast-title">Tom Holland</span>
+            </div>
+            <div class="cast-box">
+                <img src="./play-page/spiderman/zenday.jpeg" alt="" class="cars-img">
+                <span class="cast-title">Zendaya</span>
+            </div>
+            <div class="cast-box">
+                <img src="./play-page/spiderman/tobay.jpeg" alt="" class="cars-img">
+                <span class="cast-title">Tobey Maguire</span>
+            </div>
+            <div class="cast-box">
+                <img src="./play-page/spiderman/anderow.jpeg" alt="" class="cars-img">
+                <span class="cast-title">Andrew Garfield</span>
+            </div>
+            <div class="cast-box">
+                <img src="./play-page/spiderman/marise.jpeg" alt="" class="cars-img">
+                <span class="cast-title">Marisa Tomei</span>
+            </div>
+            <div class="cast-box">
+                <img src="./play-page/spiderman/willem.jpeg" alt="" class="cars-img">
+                <span class="cast-title">Willem Dafoe</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="popular-content swiper container">
+        <div class="heading">
+            <h2 class="heading-title">Phim Đề cử </h2>
+        </div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="movie-box">
+
+                    <img src="./play-page/antMan/download.jpeg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="movie-title">Người kiến 3</h2>
+                        <span class="movie-type">Acdion</span>
+                        <a href="#" class="watch-btn play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="movie-box">
+                    <img src="./play-page/deadpool/img-deadpool.jpeg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="movie-title">Deadpool</h2>
+                        <span class="movie-type">Acdion</span>
+                        <a href="deadpool.html" class="watch-btn play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="movie-box">
+                    <img src="./img/avatar2.jpeg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="movie-title">Avatrar 2</h2>
+                        <span class="movie-type">Acdion</span>
+                        <a href="" class="watch-btn play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="movie-box">
+                    <img src="./img/avengers.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="movie-title">Cuộc Chiến Vô Cức</h2>
+                        <span class="movie-type">Acdion</span>
+                        <a href="" class="watch-btn play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="movie-box">
+                    <img src="./img/avatar1.jpeg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="movie-title">Avatar 1</h2>
+                        <span class="movie-type">Acdion</span>
+                        <a href="avatar_1.html" class="watch-btn play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="end-movie-content container">
+        <div class="end-movie">
+            <a href="" class="logo-end">
+                <img src="./img/avengers-logo_preview_rev_1.png" alt="">
+            </a>
+        </div >
+        <div class="menu-end">
+            <ul>
+                <li>
+                    Phim Mới
+                </li>
+                <li>
+                    Phim Hay
+                </li>
+                <li>
+                    Phim Hot
+                </li>
+                <li>
+                    Trợ giúp
+                </li>
+                <li>
+                    Thông tin
+                </li>
+            
+                <li>
+                    Phim Chiếu Rạp
+                </li>
+                <li>
+                    Phim mỹ
+                </li>
+                <li>phimmoi</li>
+                <li>Hỏi đáp</li>
+                <li>Điều Khoảng sử dụng</li>
+           
+                <li>Phim lẻ</li>
+                <li> Phim hàn quốc</li>
+                <li> Sitemap</li>
+                <li>Liện hệ</li>
+                <li>Chính sách riêng tư</li>
+            
+                <li>Phim bộ</li>
+                <li>Phim trung quốc</li>
+                
+                <li>tin tức</li>
+                <li>khiếu nại bản quyền</li>
+            
+                <li>Phim hành động</li>
+                <li>Phim thái lan</li>
+               
+                <li>© 2022</td>
+            </ul>
+
+        </div>
+               
+    </div>
+
+
+
+   
+    
+
+
+    <script src="./swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
